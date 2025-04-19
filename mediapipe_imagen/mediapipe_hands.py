@@ -10,6 +10,7 @@ mp_drawing=mp.solutions.drawing_utils
 mp_hands=mp.solutions.hands
 
 #Se usa el with para cerrar el hands cuando se salga de ese bloque
+#Cuando usamos el as hands, se está creando un objeto en base a los parámetros ingresando dentro del .Hands()
 with mp_hands.Hands(
     static_image_mode=True,
     max_num_hands=2,
