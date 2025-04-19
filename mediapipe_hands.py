@@ -35,12 +35,18 @@ with mp_hands.Hands(
     #print("MULTI_HAND_LANDMARKS: ", results.multi_hand_landmarks)
 
     if results.multi_hand_landmarks is not None:
-        for hand_landmarks in results.multi_hand_landmarks:
-            #print(hand_landmarks)
-            mp_drawing.draw_landmarks(
-                image, hand_landmarks, mp_hands.HAND_CONNECTIONS
-            )
+        #Valores referenciales de los puntos de los dedos
+        valores_referenciales = [4,8,12,16,20]
 
+        #El hand_landmarks contiene los 21 puntos de las 2 manos, pero como tal el results.multi_hand_landmarks recorrerá 2 veces (por cada mano)
+        for hand_landmarks in results.multi_hand_landmarks:
+            #"i" de indice, y "ubicacion"{x,y,z} que se encuentra dentro del enumerate({lista}), el cual viene a ser la ubicación del punto en el espacio especifico
+            for(i, ubicacion) in enumerate(hand_landmarks.landmark):
+                #Recorremos todos los puntos hasta que el indice coincida con los "valores_referenciales", el cual es el numero el cual ubica los puntos superiores de los dedos.
+                if i in valores_referenciales:
+                    x = int(ubicacion.x*width)
+                    y = int(ubicacion.y*height)
+                    cv2.circle(image, (x,y), 3, (255,0,0), 3)
 
 #Mostrar la imagen
 cv2.imshow("Image", image)
