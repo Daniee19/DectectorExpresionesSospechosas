@@ -41,7 +41,8 @@ Services: La carpeta services/ contiene la lógica de negocio que se utiliza den
 Static & Templates: Si tu aplicación tiene una interfaz web, coloca los archivos estáticos (imágenes, archivos CSS, JS) en la carpeta static/, y las plantillas HTML en la carpeta templates/.
 
 ## Se implementó la librería de mediapipe para detectar manos
-![Foto](img/photo_mediapipe_hands.jpg)
+![Foto](static/img/photo_mediapipe_hands.jpg)
 
 ## Se implementó la librería de mediapipe para detectar el rostro
-![Foto2](img/foto_face.jpg)
+![Foto](static/img/foto_face.jpg)
+
