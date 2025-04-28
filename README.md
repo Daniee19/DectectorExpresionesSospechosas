@@ -44,4 +44,4 @@ Static & Templates: Si tu aplicación tiene una interfaz web, coloca los archivo
 ![Foto](img/photo_mediapipe_hands.jpg)
 
 ## Se implementó la librería de mediapipe para detectar el rostro
-![Foto](img/foto_face.jpg)
+![Foto2](img/foto_face.jpg)
