@@ -1,6 +1,7 @@
 # Supervisor con IA para detectar intentos de plagio en exámenes remotos/virtuales
 
-## Se utiliza FastAPI
+
+# Se utiliza FastAPI
 
 Este proyecto utiliza **FastAPI**, un moderno y rápido framework web para construir APIs con Python. Está basado en estándares como **Python 3.7+** y **Starlette**. Es ideal para crear aplicaciones web y APIs RESTful de alto rendimiento.
 
@@ -39,5 +40,5 @@ Services: La carpeta services/ contiene la lógica de negocio que se utiliza den
 
 Static & Templates: Si tu aplicación tiene una interfaz web, coloca los archivos estáticos (imágenes, archivos CSS, JS) en la carpeta static/, y las plantillas HTML en la carpeta templates/.
 
-## Se implementó la librería de mediapipe para detectar manos
+# Se implementó la librería de mediapipe para detectar manos
 ![Foto](img/photo_mediapipe_hands.jpg)
