@@ -1,0 +1,1 @@
+#En schema permite validar la información de los datos que el usuario manda o recibe en la API.

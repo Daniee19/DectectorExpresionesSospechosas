@@ -17,7 +17,7 @@ with mp_hands.Hands(
     min_detection_confidence=0.5
 ) as hands:
     #Leer la imagen
-    image=cv2.imread("img/imagen.jpg")
+    image=cv2.imread("./static/img/imagen.jpg")
     #Obtener el alto, ancho y los canales de colores
     height, width, _ = image.shape
     #Invertir horizontalmente
