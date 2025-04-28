@@ -9,7 +9,18 @@ Este proyecto utiliza **FastAPI**, un moderno y rápido framework web para const
 
 - Python 3.7 o superior
 - pip (gestor de paquetes de Python)
+- Instalar la FastApi, es una librería de Python.
 
+   ```bash
+   pip install fastapi
+   ```
+   
+- También se necesita instalar un servidor ASGI para correrlo, típicamente Uvicorn
+
+   ```bash
+   pip install uvicorn
+   ```
+   
 ## 📦 Instalación
 
 Sigue estos pasos para instalar las dependencias del proyecto.
@@ -18,7 +29,8 @@ Sigue estos pasos para instalar las dependencias del proyecto.
 
    ```bash
    git clone https://github.com/tu_usuario/tu_repositorio.git](https://github.com/Daniee19/SupervisorExamenRemotoIA.git
-
+   ```
+   
 ## 🛠️ Uso
 
 Para iniciar el servidor de desarrollo de FastAPI, utiliza el siguiente comando:
@@ -26,6 +38,7 @@ Para iniciar el servidor de desarrollo de FastAPI, utiliza el siguiente comando:
 ```bash
 uvicorn app.main:app --reload
 ```
+
 Esto iniciará el servidor en http://localhost:8000. La opción --reload permite que el servidor se recargue automáticamente cuando se realicen cambios en el código.
 
 ## 🧑‍💻 ¿Cómo trabajar con el proyecto?
