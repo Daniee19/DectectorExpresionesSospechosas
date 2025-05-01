@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aulas Virtuales</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="/static/css/principal_profesor.css">
+</head>
+<body>
+    <div id="grid-layout">
+        <div class="sidebar" id="sidebar">
+            <div id="expanded-buttons">
+                <button id="btn-contraer" class="toggle-btn" onclick="toggleSidebar()"><i class="ti ti-arrow-left"></i></button>
+                <button id="btn-expandir" class="toggle-btn" onclick="toggleSidebar()"><i class="ti ti-menu-2"></i></button>
+            </div>
+            <nav>
+              <div class="nav-item">
+                <span><i class="ti ti-home icono-navbar"></i></span>
+                <span class="nombre-icono-navbar">Inicio</span>
+              </div>
+              <div class="nav-item">
+                <span><i class="ti ti-chalkboard icono-navbar"></i></span>
+                <span class="nombre-icono-navbar">Aulas virtuales</span>
+              </div>
+              <div class="nav-item">
+                <span><i class="ti ti-video icono-navbar"></i></span>
+                <span class="nombre-icono-navbar">Grabaciones</span>
+              </div>
+            </nav>
+        </div>
+
+        <header id="header">
+            <div id="contenedor-logo-sistema">
+                <div id="logo-sistema">
+                    <img src="/static/img/logos/logo_04.png" alt="Logo del sistema" id="logo">
+                </div>
+                <span>ExamShield</span>
+            </div>
+            <div id="contenedor-perfil">
+                <div id="notificaciones">
+                    <i class="ti ti-bell"></i>
+                </div>
+                <div><i class="ti ti-minus-vertical"></i></div>
+                <div id="cuenta">
+                    <span>Nombre del usuario</span>
+                    <i class="ti ti-user-hexagon"></i>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="header-aula-virtual">
+              <button class="btn-create">
+                <span><i class="ti ti-copy-plus icono-plus"></i></span>
+                <span>Crear Aula Virtual</span>
+              </button>
+              <div class="configuracion-busqueda">
+                <div class="contenedor-busqueda">
+                    <input type="text" placeholder="Buscar aula por ID">
+                    <button class="contenedor-btn-buscar"><i class="ti ti-search"></i></button>
+                </div>
+                <button class="btn-filtros">
+                    <i class="ti ti-adjustments-horizontal"></i>
+                    <span>Filtrar</span>
+                </button>
+              </div>
+            </div>
+        
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Curso</th>
+                  <th>Estudiantes</th>
+                  <th>Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0001</td>
+                  <td>Aula 01</td>
+                  <td>Nombre del curso</td>
+                  <td>27</td>
+                  <td>
+                    <button class="btn-report">
+                        <i class="ti ti-file-description"></i>
+                        <span>Ver reporte</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>0002</td>
+                  <td>Aula 02</td>
+                  <td>Nombre del curso</td>
+                  <td>30</td>
+                  <td>
+                    <button class="btn-report">
+                        <i class="ti ti-file-description"></i>
+                        <span>Ver reporte</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>0003</td>
+                  <td>Aula 03</td>
+                  <td>Nombre del curso</td>
+                  <td>21</td>
+                  <td>
+                    <button class="btn-report">
+                        <i class="ti ti-file-description"></i>
+                        <span>Ver reporte</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>0004</td>
+                  <td>Aula 04</td>
+                  <td>Nombre del curso</td>
+                  <td>10</td>
+                  <td>
+                    <button class="btn-report">
+                        <i class="ti ti-file-description"></i>
+                        <span>Ver reporte</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </main>
+    </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('expanded');
+    }
+  </script>
+</body>
+</html>

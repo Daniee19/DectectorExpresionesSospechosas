@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descripción del estudiante</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="/static/css/descripciones.css">
+</head>
+<body>
+    <div id="grid-layout">
+        <div class="sidebar" id="sidebar">
+            <div id="expanded-buttons">
+                <button id="btn-contraer" class="toggle-btn" onclick="toggleSidebar()"><i class="ti ti-arrow-left"></i></button>
+                <button id="btn-expandir" class="toggle-btn" onclick="toggleSidebar()"><i class="ti ti-menu-2"></i></button>
+            </div>
+            <nav>
+              <div class="nav-item">
+                <span><i class="ti ti-home icono-navbar"></i></span>
+                <span class="nombre-icono-navbar">Inicio</span>
+              </div>
+              <div class="nav-item">
+                <span><i class="ti ti-chalkboard icono-navbar"></i></span>
+                <span class="nombre-icono-navbar">Aulas virtuales</span>
+              </div>
+              <div class="nav-item">
+                <span><i class="ti ti-video icono-navbar"></i></span>
+                <span class="nombre-icono-navbar">Grabaciones</span>
+              </div>
+            </nav>
+        </div>
+
+        <header id="header">
+            <div id="contenedor-logo-sistema">
+                <div id="logo-sistema">
+                    <img src="/static/img/logos/logo_04.png" alt="Logo del sistema" id="logo">
+                </div>
+                <span>ExamShield</span>
+            </div>
+            <div id="contenedor-perfil">
+                <div id="notificaciones">
+                    <i class="ti ti-bell"></i>
+                </div>
+                <div><i class="ti ti-minus-vertical"></i></div>
+                <div id="cuenta">
+                    <span>Nombre del usuario</span>
+                    <i class="ti ti-user-hexagon"></i>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Información del estudiante -->
+            <div class="student-card">
+                <h2>Gian Pool Alexander Vila Livias</h2>
+                <div class="student-info">
+                    <i class="ti ti-minus-vertical"></i>
+                    <p><strong>ID:</strong> 12345</p>
+                    <i class="ti ti-minus-vertical"></i>
+                    <p><strong>Examen:</strong> Final de Matemáticas</p>
+                    <i class="ti ti-minus-vertical"></i>
+                    <p><strong>Estado:</strong> <span class="status-alert">Incidentes detectados</span></p>
+                    <i class="ti ti-minus-vertical"></i>
+                    <p><strong>Número de incidentes:</strong> <span>3</span></p>
+                </div>
+            </div>
+            
+            <section class="linea-tiempo">
+                <header>
+                    <h3>Información detallada:</h3>
+                </header>
+                <main class="contenedor-incidentes">
+                    <div class="incidente">
+                        <div class="tiempo"><strong>Minuto 12</strong> <span class="nivel-bajo">Bajo</span></div>
+                        <p>Se observó que el estudiante desvió la mirada fuera de la pantalla por un par de segundos.</p>
+                    </div>
+                    <div class="incidente">
+                        <div class="tiempo"><strong>Minuto 34</strong> <span class="nivel-medio">Medio</span></div>
+                        <p>Se vio que el estudiante saco las manos fuera de la vista de la cámara.</p>
+                    </div>
+                    <div class="incidente">
+                        <div class="tiempo"><strong>Minuto 57</strong> <span class="nivel-alto">Alto</span></div>
+                        <p>Se evidenció que el estudiante haya sacado su celular para buscar la respuesta.</p>
+                    </div>
+                </main>
+            </section>
+            
+        </main>
+    </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('expanded');
+    }
+  </script>
+</body>
+</html>
