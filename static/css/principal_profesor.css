@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  #grid-layout {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 4.8rem 1fr;
+      grid-template-areas:
+          "sidebar header"
+          "sidebar main";
+      height: 100vh;
+      transition: all 0.3s ease;
+  }
+
+  /* Barra lateral */
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #1e1e3f;
+    width: 80px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 1rem;
+    gap: 3rem;
+  }
+
+  .sidebar.expanded {
+    width: 200px;
+  }
+
+  /* Estilos de los botones de expansion */
+
+  .sidebar .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* Estilos del contenedor de botones */
+
+  #expanded-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .sidebar.expanded #expanded-buttons{
+    display: flex;
+    justify-content: start;
+  }
+
+  #btn-expandir{
+    display: flex;
+  }
+  #btn-contraer{
+    display: none;
+  }
+
+  .sidebar.expanded #expanded-buttons #btn-expandir{
+    display: none;
+  }
+  .sidebar.expanded #expanded-buttons #btn-contraer{
+    display: flex;
+  }
+  
+
+  /* Estilos de los iconos de la barra lateral */
+
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .sidebar.expanded nav {
+    align-items: flex-start;
+  }
+
+  .sidebar nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .sidebar nav .nav-item .nombre-icono-navbar{
+    display: none;
+  }
+
+  .sidebar nav .nav-item .icono-navbar{
+    font-size: 2rem;
+  }
+
+  .sidebar.expanded nav .nav-item span {
+    display: inline;
+  }
+
+  /* Header */
+  #header {
+    grid-area: header;
+    background-color: #ffffff;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Contenedor del logo */
+  #contenedor-logo-sistema {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+    font-size: 1.4rem;
+  }
+  
+  #logo-sistema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+  }
+
+  #logo{
+      width: auto;
+      height: 100%;
+  }
+  /* Contenedor de la cuenta */
+  #contenedor-perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.8rem;
+  }
+
+  #cuenta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #contenedor-perfil #notificaciones i {
+    cursor: pointer;
+  }
+  #contenedor-perfil #cuenta i {
+    cursor: pointer;
+  }
+
+  #contenedor-perfil #cuenta span {
+    font-size: 1rem;
+  }
+
+
+  /* Contenido del main */
+  .main-content {
+    grid-area: main;
+    background-color: #e8efef;
+    padding: 20px;
+    overflow: auto;
+  }
+
+  .header-aula-virtual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Botón de crear aula virtual */
+
+  .btn-create {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+  }
+
+  .btn-create .icono-plus {
+    font-size: 1.4rem;
+  }
+
+  /* Filtros de búsqueda */
+
+  .configuracion-busqueda {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+
+  /* Contenedor de búsqueda */
+
+  .configuracion-busqueda .contenedor-busqueda{
+      display: flex;
+  }
+
+  .configuracion-busqueda input {
+    width: 15rem;
+    padding: 10px 15px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+  }
+
+  .configuracion-busqueda input:focus {
+      border: 2px solid #3374f7;
+      outline: none;
+  }
+
+  /* Botón de búsqueda */
+
+  .contenedor-btn-buscar {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  /* Botón de filtro */
+
+  .btn-filtros {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #9d9d9d;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .btn-filtros span{
+    font-size: 1rem;
+  }
+  .btn-filtros i {
+    font-size: 1.4rem;
+  }
+
+  /* Tabla de aulas virtuales */
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #e5e5e5;
+  }
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .btn-report {
+    background-color: #ef4444;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+  }
+
+  .btn-report span{
+    font-size: 0.8rem;
+  }
+  .btn-report i {
+    font-size: 1.2rem;
+  }
