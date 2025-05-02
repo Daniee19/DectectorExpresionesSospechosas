@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+#flex-layout {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 4.8rem 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* Barra lateral */
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #1e1e3f;
+    width: 80px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 1rem;
+    gap: 3rem;
+}
+
+.sidebar.expanded {
+    width: 200px;
+}
+
+/* Estilos de los botones de expansion */
+
+.sidebar .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Estilos del contenedor de botones */
+
+#expanded-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar.expanded #expanded-buttons {
+    display: flex;
+    justify-content: start;
+}
+
+#btn-expandir {
+    display: flex;
+}
+
+#btn-contraer {
+    display: none;
+}
+
+.sidebar.expanded #expanded-buttons #btn-expandir {
+    display: none;
+}
+
+.sidebar.expanded #expanded-buttons #btn-contraer {
+    display: flex;
+}
+
+
+/* Estilos de los iconos de la barra lateral */
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.sidebar.expanded nav {
+    align-items: flex-start;
+}
+
+.sidebar nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sidebar nav .nav-item .nombre-icono-navbar {
+    display: none;
+}
+
+.sidebar nav .nav-item .icono-navbar {
+    font-size: 2rem;
+}
+
+.sidebar.expanded nav .nav-item span {
+    display: inline;
+}
+
+/* Header */
+#header {
+    background-color: #ffffff;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+/* Contenedor del logo */
+#contenedor-logo-sistema {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    /* height: 100%; */
+    font-size: 1.4rem;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-sistema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+}
+
+#logo {
+    width: auto;
+    height: 45px;
+}
+
+/* Contenedor de la cuenta */
+#contenedor-perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.8rem;
+}
+
+#cuenta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#contenedor-perfil #notificaciones i {
+    cursor: pointer;
+}
+
+#contenedor-perfil #cuenta i {
+    cursor: pointer;
+}
+
+#contenedor-perfil #cuenta span {
+    font-size: 1rem;
+}
+
+/*REPORTE DEL ALUMNO*/
+.division_slide {
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    background-color: aliceblue;
+    padding: 30px;
+}
+
+#main>h4 {
+    margin-bottom: 20px;
+}
+
+.tablita_reportes_alumnos {
+    background-color: rgb(108, 139, 209);
+    color: #000000;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 4px 4px 10px 0px;
+}
+
+.tablita_reportes_alumnos button {
+    color: white;
+    background-color: #3ad91e;
+    align-items: center;
+    display: flex;
+    padding: 4px 10px;
+    gap: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    border: none;
+}
+
+.tablita_reportes_alumnos .bajo {
+    background-color: #3ad91e;
+}
+
+.tablita_reportes_alumnos .medio {
+    background-color: #eca81f;
+}
+
+.tablita_reportes_alumnos .alto {
+    background-color: #b71c1c;
+}
+
+.tablita_reportes_alumnos button:hover {
+    cursor: pointer;
+}
+
+.bloque_reportes_alumnos {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    background: white;
+    color: black;
+
+}

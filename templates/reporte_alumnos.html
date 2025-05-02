@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/reporte_alumnos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <title>Reporte de alumnos</title>
+</head>
+
+<body>
+
+    <div id="flex-layout">
+        <div class="sidebar" id="sidebar">
+            <div id="expanded-buttons">
+                <button id="btn-contraer" class="toggle-btn" onclick="toggleSidebar()"><i
+                        class="ti ti-arrow-left"></i></button>
+                <button id="btn-expandir" class="toggle-btn" onclick="toggleSidebar()"><i
+                        class="ti ti-menu-2"></i></button>
+            </div>
+            <nav>
+                <div class="nav-item">
+                    <span><i class="ti ti-home icono-navbar"></i></span>
+                    <span class="nombre-icono-navbar">Inicio</span>
+                </div>
+                <div class="nav-item">
+                    <span><i class="ti ti-chalkboard icono-navbar"></i></span>
+                    <span class="nombre-icono-navbar">Aulas virtuales</span>
+                </div>
+                <div class="nav-item">
+                    <span><i class="ti ti-video icono-navbar"></i></span>
+                    <span class="nombre-icono-navbar">Grabaciones</span>
+                </div>
+            </nav>
+        </div>
+        <div class="division_slide">
+            <header id="header">
+                <div id="contenedor-logo-sistema">
+                    <div id="logo-sistema">
+                        <img src="/static/img/logos/logo_04.png" alt="Logo del sistema" id="logo">
+                    </div>
+                    <span>ExamShield</span>
+                </div>
+                <div id="contenedor-perfil">
+                    <div id="notificaciones">
+                        <i class="ti ti-bell"></i>
+                    </div>
+                    <div><i class="ti ti-minus-vertical"></i></div>
+                    <div id="cuenta">
+                        <span>Nombre del usuario</span>
+                        <i class="ti ti-user-hexagon"></i>
+                    </div>
+                </div>
+            </header>
+            <main id="main">
+                <h4>MOD1-SQLSERVER-1703</h4>
+                <div class="tablita_reportes_alumnos">
+                    <div class="bloque_reportes_alumnos" style="background-color: aliceblue; color: black;">
+                        <h4>
+                            Nombres y Apellidos
+                        </h4>
+                        <h4>Tiempo</h4>
+                        <h4>Reporte</h4>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Juan Villa
+                        </p>
+                        <p>00:11:02</p>
+                        <button class="bajo">
+                            <div>
+                                Puntos criticos<br>
+                                (2)<br>
+                            </div>
+                            | <i class="fa-solid fa-camera fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Miguel García
+                        </p>
+                        <p>01:06:02</p>
+                        <button class="medio">
+                            <div>
+                                Puntos criticos<br>
+                                (8)<br>
+                            </div>
+                            | <i class="fa-solid fa-triangle-exclamation fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Humberto Aguirre
+                        </p>
+                        <p>00:14:02</p>
+                        <button class="alto">
+                            <div>
+                                Puntos criticos<br>
+                                (14)<br>
+                            </div>
+                            | <i class="fa-solid fa-skull fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Juan Villa
+                        </p>
+                        <p>00:11:02</p>
+                        <button class="bajo">
+                            <div>
+                                Puntos criticos<br>
+                                (2)<br>
+                            </div>
+                            | <i class="fa-solid fa-camera fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Miguel García
+                        </p>
+                        <p>01:06:02</p>
+                        <button class="medio">
+                            <div>
+                                Puntos criticos<br>
+                                (8)<br>
+                            </div>
+                            | <i class="fa-solid fa-triangle-exclamation fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Humberto Aguirre
+                        </p>
+                        <p>00:14:02</p>
+                        <button class="alto">
+                            <div>
+                                Puntos criticos<br>
+                                (14)<br>
+                            </div>
+                            | <i class="fa-solid fa-skull fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Juan Villa
+                        </p>
+                        <p>00:11:02</p>
+                        <button class="bajo">
+                            <div>
+                                Puntos criticos<br>
+                                (2)<br>
+                            </div>
+                            | <i class="fa-solid fa-camera fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Miguel García
+                        </p>
+                        <p>01:06:02</p>
+                        <button class="medio">
+                            <div>
+                                Puntos criticos<br>
+                                (8)<br>
+                            </div>
+                            | <i class="fa-solid fa-triangle-exclamation fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Humberto Aguirre
+                        </p>
+                        <p>00:14:02</p>
+                        <button class="alto">
+                            <div>
+                                Puntos criticos<br>
+                                (14)<br>
+                            </div>
+                            | <i class="fa-solid fa-skull fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Juan Villa
+                        </p>
+                        <p>00:11:02</p>
+                        <button class="bajo">
+                            <div>
+                                Puntos criticos<br>
+                                (2)<br>
+                            </div>
+                            | <i class="fa-solid fa-camera fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                    <div class="bloque_reportes_alumnos">
+                        <p>
+                            Miguel García
+                        </p>
+                        <p>01:06:02</p>
+                        <button class="medio">
+                            <div>
+                                Puntos criticos<br>
+                                (8)<br>
+                            </div>
+                            | <i class="fa-solid fa-triangle-exclamation fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('expanded');
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/c353473263.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
