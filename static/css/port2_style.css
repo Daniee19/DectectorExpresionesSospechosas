@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a1a3a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contenedor {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .contenedor h1 {
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .title {
+    font-size: 32 px;
+    margin-bottom: 30px;
+  }
+  
+  .roles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .rol {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .rol h2 {
+    font-size: 22px;
+    color: #111;
+    margin-bottom: 15px;
+  }
+  
+  .rol button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rol button:hover {
+    background-color: #0056b3;
+  }
+  
