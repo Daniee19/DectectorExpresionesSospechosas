@@ -1,0 +1,59 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+  }
+  /* Contenedor principal */
+  .content {
+    background-color: #0a1a3a;
+    padding: 30px 0;
+    min-height: 100vh;
+  }
+  
+  /* Caja blanca centrada */
+  .main-box {
+    background-color: white;
+    color: black;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .main-box h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Datos del curso */
+  .info-box {
+    background-color: #d3d3d3;
+    padding: 15px;
+    text-align: left;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  
+  /* Botón rojo */
+  .button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #aaa;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #d32f2f;
+  }
+  
